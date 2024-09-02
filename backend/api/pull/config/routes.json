@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pulls",
+      "handler": "pull.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pulls/count",
+      "handler": "pull.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pulls/verify",
+      "handler": "pull.checkCode",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pulls/skip",
+      "handler": "pull.getJoinGroup",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pulls/:id",
+      "handler": "pull.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pulls",
+      "handler": "pull.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pulls/:id",
+      "handler": "pull.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pulls/:id",
+      "handler": "pull.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

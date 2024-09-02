@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seasons",
+  "info": {
+    "name": "Season",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Season": {
+      "type": "string"
+    },
+    "games": {
+      "via": "season",
+      "collection": "game"
+    }
+  }
+}

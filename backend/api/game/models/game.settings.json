@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "Game",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Game": {
+      "type": "string"
+    },
+    "season": {
+      "model": "season",
+      "via": "games"
+    },
+    "pulls": {
+      "via": "game",
+      "collection": "pull"
+    }
+  }
+}
